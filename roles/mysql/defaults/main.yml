@@ -10,7 +10,7 @@ mysql:
     cnfpath: /etc/mysql/my.cnf
   service: mysql
   pkg: 
-    server: mysql-server-core-5.5
-    client: mysql-client-core-5.5
+    server: mysql-server
+    client: mysql-client
     python: python-mysqldb
   server: mysqld
