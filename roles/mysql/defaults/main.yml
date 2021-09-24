@@ -1,0 +1,16 @@
+---
+mysql:
+  config:
+    user: mysql
+    port: 3306
+    datadir: /var/lib/mysql
+    bind: 0.0.0.0
+    pid: /var/run/mysqld/mysqld.pid
+    socket: /var/run/mysqld/mysql.sock
+    cnfpath: /etc/mysql/my.cnf
+  service: mysql
+  pkg: 
+    server: mysql-server-core-5.5
+    client: mysql-client-core-5.5
+    python: python-mysqldb
+  server: mysqld

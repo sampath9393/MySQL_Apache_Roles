@@ -1,0 +1,6 @@
+---
+# Playbook for Database Servers
+# filename: db.yml
+- hosts: db
+  roles:
+     - { role: mysql }
