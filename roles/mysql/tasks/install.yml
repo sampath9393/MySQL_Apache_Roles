@@ -5,6 +5,3 @@
     name: "{{ mysql['pkg']['server'] }}"  
   when: mysql.server
 
-- name: install mysql python binding
-  yum: 
-    name: "{{ mysql['pkg']['python'] }}"

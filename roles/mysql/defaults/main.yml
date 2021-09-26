@@ -7,10 +7,10 @@ mysql:
     bind: 0.0.0.0
     pid: /var/run/mysqld/mysqld.pid
     socket: /var/run/mysqld/mysql.sock
-    cnfpath: /etc/mysql/my.cnf
-  service: mysql
+    cnfpath: /etc/my.cnf
+  service: mysqld
   pkg: 
     server: mysql-server
     client: mysql-client
     python: python-mysqldb
-  server: mysqld
+  server: true

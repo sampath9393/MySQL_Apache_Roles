@@ -2,5 +2,6 @@
 # Playbook for Database Servers
 # filename: db.yml
 - hosts: db
+  become: yes
   roles:
      - { role: mysql }

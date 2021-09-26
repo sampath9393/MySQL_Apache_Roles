@@ -7,21 +7,3 @@
    tags:
     - configure 
 
- - name: create mysql databases
-   mysql_db: 
-     name: "{{ item.key }}" 
-     state: "{{ item.value.state }}"
-   with_dict: "{{ mysql['databases'] }}"
-   tags:
-    - configure 
-
- - name: create mysql users
-   mysql_user: 
-     name: "{{ item.key }}" 
-     host: "{{ item.value.host }}"
-     password: "{{ item.value.pass }}" 
-     priv: "{{ item.value.priv }}"
-     state: "{{ item.value.state }}"
-   with_dict: "{{ mysql['users'] }}"
-   tags:
-    - configure 
